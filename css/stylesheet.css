@@ -46,9 +46,6 @@
 		#nav a:hover {
             background-color:rgba(205,105,30,.8);
 	        /*-webkit-transition-duration: .2s;*/
- 		    -moz-border-radius: 5px 5px 0px 0px;  
-		    -webkit-border-radius: 10px 10px 0px 0px;  
-		    border-radius: 10px 10px 0px 0px;  
 			text-shadow: 1px 1px 1px #000;  
             }
 
@@ -74,6 +71,7 @@
 			}  
 
 .col{  
+	padding:5px 0px 5px 0px;
     display:inline;  
     float: left;  
     position: relative;  
@@ -82,6 +80,11 @@
 	width:150px; 
 	text-align:center;
 }  
+
+.col a:hover {
+	background-color:rgba(205,105,30,.8);  
+	text-shadow: 1px 1px 1px #000; 
+	}
 
 
 
