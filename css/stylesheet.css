@@ -73,7 +73,15 @@
     		left:10px;top:auto;  
 			}  
 
-
+.col{  
+    display:inline;  
+    float: left;  
+    position: relative;  
+    margin-left: 5px;  
+    margin-right: 5px; 
+	width:150px; 
+	text-align:center;
+}  
 
 
 
