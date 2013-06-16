@@ -28,8 +28,10 @@
     		position:relative;  
     		padding: 4px 10px 4px 10px;  
     		margin-right:30px;  
-    		  
     		border:none;
+			-moz-border-radius: 5px 5px 0px 0px;  
+			-webkit-border-radius: 5px 5px 0px 0px;  
+			border-radius: 5px 5px 0px 0px;  
             }
             
         #nav a {
@@ -43,8 +45,38 @@
 			
 		#nav a:hover {
             background-color:rgba(205,105,30,.8);
-	        -webkit-transition-duration: .3s;
+	        /*-webkit-transition-duration: .2s;*/
+ 		    -moz-border-radius: 5px 5px 0px 0px;  
+		    -webkit-border-radius: 10px 10px 0px 0px;  
+		    border-radius: 10px 10px 0px 0px;  
+			text-shadow: 1px 1px 1px #000;  
             }
+
+		.dropdown1{
+			margin:4px auto;  
+    		position:absolute;  
+   			left:-999em; /* Hides the drop down */  
+    		text-align:left;  
+    		padding:10px 5px 10px 5px;  
+    		/*border:1px solid #777777;*/  
+    		border-top:none;  
+    		background:#F4F4F4;  
+    		background: -moz-linear-gradient(top, #EEEEEE, #BBBBBB);  
+    		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#BBBBBB));  
+  			-moz-border-radius: 0px 0px 5px 5px;  
+    		-webkit-border-radius: 0px 0px 5px 5px;  
+    		border-radius: 0px 0px 5px 5px;
+			width: 154px;  
+			}
+
+		#nav li:hover .dropdown1 {  
+    		left:10px;top:auto;  
+			}  
+
+
+
+
+
 
 body {
 	background: url(http://subtlepatterns.com/patterns/scribble_light.png) ;
