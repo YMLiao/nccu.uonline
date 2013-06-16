@@ -23,6 +23,12 @@
 	        text-decoration: none;
 	        text-shadow: 1px 1px 2px #CECECE;
             }/* CSS Document */
+			
+			
+		#nav a:hover {
+            background-color:rgba(226,41,164,.8);
+	        -webkit-transition-duration: .3s;
+            }
 
 body {
 	background: url(http://subtlepatterns.com/patterns/scribble_light.png) ;
