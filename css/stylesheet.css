@@ -1,10 +1,18 @@
 @charset "UTF-8";
 #nav {
             font-family:"Courier New", Courier, monospace;
-            border-top: solid 3px #800000 ;
-	        border-bottom: solid 3px #ffe4e1;
+            border-top: solid 1px #800000 ;
+	        border-bottom: solid 1px #ffe4e1;
 	        height: 60px;
 	        background: #b22222;
+			-moz-border-radius: 10px  
+			-webkit-border-radius: 10px;  
+			border-radius: 10px;  
+			background: -moz-linear-gradient(top, #b22222, #8b0000);  
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b22222), to(#8b0000));
+			-moz-box-shadow:inset 0px 0px 1px #edf9ff;  
+			-webkit-box-shadow:inset 0px 0px 1px #edf9ff;  
+			box-shadow:inset 0px 0px 1px #edf9ff;  
             }
             
         #nav ul{
@@ -14,6 +22,14 @@
        
         #nav ul li {    
 	        display: inline-block;
+			float:left;  
+    		display:block;  
+    		text-align:center;  
+    		position:relative;  
+    		padding: 4px 10px 4px 10px;  
+    		margin-right:30px;  
+    		  
+    		border:none;
             }
             
         #nav a {
