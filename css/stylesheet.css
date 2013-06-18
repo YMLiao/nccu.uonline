@@ -39,7 +39,7 @@
             }
             
         #nav a {
-	        padding: 7px 30px 7px 30px;
+	        padding: 7px 20px 7px 20px;
         	color: #FFFFFF;
 	        font-size: 2em;
 	        text-decoration: none;
@@ -67,7 +67,7 @@
   			-moz-border-radius: 0px 0px 5px 5px;  
     		-webkit-border-radius: 0px 0px 5px 5px;  
     		border-radius: 0px 0px 5px 5px;
-			width: 154px;  
+			width: 134px;  
 			}
 
 		#nav li:hover .dropdown1 {  
