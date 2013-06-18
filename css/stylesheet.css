@@ -248,3 +248,25 @@ body {
 .class dd h2 {
 	font-color: #ffe4e1;
 	}
+	
+#footer {
+            font-family:"Courier New", Courier, monospace;
+            border-top: solid 1px #800000 ;
+	        border-bottom: solid 1px #ffe4e1;
+	        height: 70px;
+	        background: #b22222;
+			-moz-border-radius: 10px  
+			-webkit-border-radius: 10px;  
+			border-radius: 10px;  
+			background: -moz-linear-gradient(top, #b22222, #8b0000);  
+			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b22222), to(#8b0000));
+			-moz-box-shadow:inset 0px 0px 1px #edf9ff;  
+			-webkit-box-shadow:inset 0px 0px 1px #edf9ff;  
+			box-shadow:inset 0px 0px 1px #edf9ff;
+    		text-align:center; 
+			font-size: 14px;
+        	color: #FFFFFF;
+	        text-decoration: none;
+	        text-shadow: 1px 1px 2px #CECECE;
+			margin-bottom: 20px;
+            }
