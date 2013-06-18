@@ -27,52 +27,23 @@ Do the following if you're using your customized build of modernizr (http://www.
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="respond.min.js"></script>
-<Title>AJAX test</Title>
-<script language="javascript">
-function CretexmlHttp()
-{ 
-try
-{
-XmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
-//Here we will assign ready state change event where we will 
-// handle the response data from the server 
-XmlHttp.onreadystatechange=stateChangeEventHandler;
-}
-//If you have an older version of Internet Explorer, you will have
-// Microsoft.XMLHTTP instead of Msxml2.XMLHTTP
-catch (e)
-{
-XmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
-}
-return XmlHttp;
-}
-function stateChangeEventHandler()
-{
-// check whether the data is loaded
-if (XmlHttp.readyState==4)
-{ // check whether the status is ok
-if (XmlHttp.status==200)
-{
-document.all ("txtAjax").value=XmlHttp.responseText
-}
-else
-{
-alert ("Error Occurred")
-}
-}
-}
-function getData(fileName)
-{
-//call the createxmlhttp function which will create xmlHttp object and assign 
-var XmlHttp= CretexmlHttp();
-//Assigns method, destination URL, and other optional attributes of a 
-//pending request.
-XmlHttp.open("GET", fileName,true)
-// Sends an HTTP request to the server and receives a response
-XmlHttp.send(null)
-return true;
-}
+
+
+
+<script>
+(function() {
+var cx = '003240078193261932419:omxg6tav99k';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+'//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
 </script>
+
+<gcse:search></gcse:search>
 
 </head>
 <body>
@@ -104,19 +75,6 @@ return true;
 </div>
 
 <div id="nav_blank"></div>
-
-<form>
-<INPUT id="txtAjax" type="text" name="Text1">
-<br>
-<button onclick="getData('Helloworld1.txt')" 
-type="button" ID="Button1">Helloworld1</button>
-<br>
-<button onclick="getData('Helloworld2.txt')" 
-type="button" ID="Button2">Helloworld2</button>
-</form>
-
-
-
 
 
 
