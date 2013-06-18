@@ -39,7 +39,7 @@
             }
             
         #nav a {
-	        padding: 7px 20px 7px 20px;
+			padding: 7px 30px 7px 30px;
         	color: #FFFFFF;
 	        font-size: 2em;
 	        text-decoration: none;
@@ -54,7 +54,7 @@
             }
 
 		.dropdown1{
-			margin:4px auto;  
+			margin:4px auto;
     		position:absolute;  
    			left:-999em; /* Hides the drop down */  
     		text-align:left;  
@@ -67,7 +67,7 @@
   			-moz-border-radius: 0px 0px 5px 5px;  
     		-webkit-border-radius: 0px 0px 5px 5px;  
     		border-radius: 0px 0px 5px 5px;
-			width: 134px;  
+			width: 154px;  
 			}
 
 		#nav li:hover .dropdown1 {  
