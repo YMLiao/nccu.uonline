@@ -245,12 +245,12 @@ body {
 	opacity: 0.4;
 }
 
-#history p {
-	font: 16px;
+.about p {
+	font-size: 16px;
 	}
 
-.class dd h2 {
-	font-color: #ffe4e1;
+.about h2 {
+	color: #8b0000;
 	}
 	
 #footer {
