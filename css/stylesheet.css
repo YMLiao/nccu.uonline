@@ -15,6 +15,10 @@
 			box-shadow:inset 0px 0px 1px #edf9ff;  
             }
             
+		#nav_blank {
+			height: 20px;
+			}
+			
         #nav ul{
 	        margin-top:10px;
 	        list-style: none;
