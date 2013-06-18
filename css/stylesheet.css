@@ -255,9 +255,6 @@ body {
 	        border-bottom: solid 1px #ffe4e1;
 	        height: 70px;
 	        background: #b22222;
-			-moz-border-radius: 10px  
-			-webkit-border-radius: 10px;  
-			border-radius: 10px;  
 			background: -moz-linear-gradient(top, #b22222, #8b0000);  
 			background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b22222), to(#8b0000));
 			-moz-box-shadow:inset 0px 0px 1px #edf9ff;  
