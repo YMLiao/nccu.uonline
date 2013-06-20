@@ -21,7 +21,7 @@ ul.playlist {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	width: 350px;
+	width: 260px;
 	float: left;
 }
 ul.playlist li {
@@ -36,23 +36,24 @@ ul.playlist li a img {
 .tv {
 	background: #666;
 	padding: 10px;
-	width: 900px;
+	width: 740px;
 	height: 360px;
+	margin: 0 auto;
 }
 .video {
 	float: left;
-	width: 640px;
-	height: 480px;
+	width: 480px;
+	height: 360px;
 }
 </style>
 <script type="text/javascript">
 	$(function(){
 		var thumbSize = 'large',		// 設定要取得的縮圖是大圖還是小圖
 										// 大圖寬高為 480X360；小圖寬高為 120X90
-			imgWidth = '160',			// 限制圖片的寬
-			imgHeight = '120',			// 限制圖片的高
-			swfWidth = '640',			// 指定 YouTube 影片的寬
-			swfHeight = '480',			// 指定 YouTube 影片的高
+			imgWidth = '120',			// 限制圖片的寬
+			imgHeight = '90',			// 限制圖片的高
+			swfWidth = '480',			// 指定 YouTube 影片的寬
+			swfHeight = '360',			// 指定 YouTube 影片的高
 			autoPlay = '&autoplay=0',	// 是否載入 YouTube 影片後自動播放；若不要自動播放則設成 0
 			fullScreen = '&fs=1';		// 是否允許播放 YouTube 影片時能全螢幕播放
 
@@ -97,7 +98,7 @@ ul.playlist li a img {
 		$('.playlist>li>a').eq(0).children('img').click();
 
 		// 變更影片播放為自動播放
-		autoPlay = '&autoplay=0';
+		autoPlay = '&autoplay=1';
 	});
 </script>
 
@@ -133,14 +134,13 @@ ul.playlist li a img {
         <div id="nav_blank"></div> 
 <div id="class_name">影音新聞</div>
 <div id="nav_blank"></div> 
-<p>test</p>
 <div class="tv">
 		<div class="video"></div>
 		<ul class="playlist">
-			<li><a href="https://www.youtube.com/watch?v=a4csPbrjVbE">台大說藝社　青年作伙來相聲</a></li>
+			<li><a href="https://www.youtube.com/watch?v=qD8pvFlDprY">【影音專題】撇差異　外籍生擁台文化</a></li>
 			<li><a href="https://www.youtube.com/watch?v=KVwVsCeYYXY">非洲嘉年華　台非人民同歡慶</a></li>
 			<li><a href="https://www.youtube.com/watch?v=ZranuifRDAA">2013醒夜盃　調酒好手齊聚切磋</a></li>
-			<li><a href="https://www.youtube.com/watch?v=qD8pvFlDprY">【影音專題】撇差異　外籍生擁台文化</a></li>
+			<li><a href="https://www.youtube.com/watch?v=a4csPbrjVbE">台大說藝社　青年作伙來相聲</a></li>
 			<li><a href="https://www.youtube.com/watch?v=cxP4W6X7fbw">歡慶母親節　「甲父母洗腳」展孝心</a></li>
 			<li><a href="https://www.youtube.com/watch?v=PZtCHzQIbl0">菁英盃啦啦錦標賽　亞太奪冠</a></li>
 			<li><a href="https://www.youtube.com/watch?v=RIDk_PLiEeU">基護工會堵衛署　提四大過勞問題</a></li>
