@@ -283,6 +283,12 @@ body {
 	color: #8b0000;
 	}
 	
+.youtube {
+	padding-left:8%;
+	padding-right:8%;
+	}	
+	
+
 #footer {
             font-family:"Courier New", Courier, monospace;
             border-top: solid 1px #800000 ;
