@@ -21,7 +21,7 @@ ul.playlist {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	width: 260px;
+	width: 350px;
 	float: left;
 }
 ul.playlist li {
@@ -36,23 +36,23 @@ ul.playlist li a img {
 .tv {
 	background: #666;
 	padding: 10px;
-	width: 740px;
+	width: 900px;
 	height: 360px;
 }
 .video {
 	float: left;
-	width: 480px;
-	height: 360px;
+	width: 640px;
+	height: 480px;
 }
 </style>
 <script type="text/javascript">
 	$(function(){
 		var thumbSize = 'large',		// 設定要取得的縮圖是大圖還是小圖
 										// 大圖寬高為 480X360；小圖寬高為 120X90
-			imgWidth = '120',			// 限制圖片的寬
-			imgHeight = '90',			// 限制圖片的高
-			swfWidth = '480',			// 指定 YouTube 影片的寬
-			swfHeight = '360',			// 指定 YouTube 影片的高
+			imgWidth = '160',			// 限制圖片的寬
+			imgHeight = '120',			// 限制圖片的高
+			swfWidth = '640',			// 指定 YouTube 影片的寬
+			swfHeight = '480',			// 指定 YouTube 影片的高
 			autoPlay = '&autoplay=0',	// 是否載入 YouTube 影片後自動播放；若不要自動播放則設成 0
 			fullScreen = '&fs=1';		// 是否允許播放 YouTube 影片時能全螢幕播放
 
@@ -97,7 +97,7 @@ ul.playlist li a img {
 		$('.playlist>li>a').eq(0).children('img').click();
 
 		// 變更影片播放為自動播放
-		autoPlay = '&autoplay=1';
+		autoPlay = '&autoplay=0';
 	});
 </script>
 
