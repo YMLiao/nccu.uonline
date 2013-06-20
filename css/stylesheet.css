@@ -41,7 +41,7 @@
 	        display: inline-block;
 			float:left; 
     		text-align:center;  
-    		position:absolute;  
+    		position:relative;  
     		padding: 4px 10px 4px 10px; 
     		border:none;
 			-moz-border-radius: 5px 5px 0px 0px;  
