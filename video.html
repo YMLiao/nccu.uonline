@@ -1,6 +1,19 @@
 <!doctype html> <!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]--> <!--[if IE 7]>    <html class="ie7 oldie"> <![endif]--> <!--[if IE 8]>    <html class="ie8 oldie"> <![endif]--> <!--[if gt IE 8]><!--> <html class=""> <!--<![endif]--> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>影音新聞｜政大大學報｜Uonline</title> <link href="boilerplate.css" rel="stylesheet" type="text/css"> 
 <link href="css/grid.css" rel="stylesheet" type="text/css"> 
-<link href="css/stylesheet.css" rel="stylesheet" type="text/css"> <link rel="shortcut icon" href="img/bar_icon.png"> <!--  To learn more about the conditional comments around the html tags at the top of the file: paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/  Do the following if you're using your customized build of modernizr (http://www.modernizr.com/): * insert the link to your js here * remove the link below to the html5shiv * add the "no-js" class to the html tags at the top * you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build  --> <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]--> <script src="respond.min.js"></script> </head> <body> <!--<div class="gridContainer clearfix">   <div id="LayoutDiv1">Use Insert Panel for additional Fluid Grid Layout Div tags. Note: All Layout Div tags must be inserted directly inside the "gridContainer" div tag. Nested Layout Div tags are not currently supported. </div>--> </div> <div id="header"><img src="img/banner_blank.png" width="100%"></div> <div id="nav" class="gridContainer_12"> <ul> 
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css"> <link rel="shortcut icon" href="img/bar_icon.png"> <!--  To learn more about the conditional comments around the html tags at the top of the file: paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/  Do the following if you're using your customized build of modernizr (http://www.modernizr.com/): * insert the link to your js here * remove the link below to the html5shiv * add the "no-js" class to the html tags at the top * you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build  --> <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]--> <script src="respond.min.js"></script> </head> 
+
+<!-- Include the core jQuery and jQuery UI -->
+<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<!-- Include the core media player JavaScript. -->
+<script type="text/javascript" src="osmplayer/bin/osmplayer.compressed.js"></script>
+<!-- Include the DarkHive ThemeRoller jQuery UI theme. -->
+<link rel="stylesheet" href="osmplayer/jquery-ui/dark-hive/jquery-ui.css">
+<!-- Include the Default template CSS and JavaScript. -->
+<link rel="stylesheet" href="osmplayer/templates/default/css/osmplayer_default.css">
+<link rel="stylesheet" href="osmplayer/templates/default/osmplayer.default.js">	
+
+<body> <!--<div class="gridContainer clearfix">   <div id="LayoutDiv1">Use Insert Panel for additional Fluid Grid Layout Div tags. Note: All Layout Div tags must be inserted directly inside the "gridContainer" div tag. Nested Layout Div tags are not currently supported. </div>--> </div> <div id="header"><img src="img/banner_blank.png" width="100%"></div> <div id="nav" class="gridContainer_12"> <ul> 
 <li id="homepage"><a href="http://ymliao.github.io/nccu.uonline/">首頁</a></li> <li id="class"><a>版面分類</a> <div class="dropdown1">
     	<div class="col"><a href="1.html">頭條</a></div>  
         <div class="col"><a href="2.html">校園</a></div>  
@@ -20,6 +33,16 @@
 <div id="class_name">影音新聞</div>
 <div id="nav_blank"></div> 
 
+<script type="text/javascript">
+$(function() {
+$("#youtube").osmplayer({
+width: '100%',
+height: '600px',
+playlist: 'http://www.youtube.com/playlist?list=PLSm0dJZmGZanFdw64CTM0icR66TiefMdB'
+});
+});
+</script>
+<video id="youtube"></video>
 
 
  <div id="footer"> <p>© 2013 NCCU Uonline WP2013</p> <p><a href="index.html">NCCU Uonline</a> by Yenming Liao & Fred Lai & Anderson Depp All rights reserved.</p></div>  </body> </html> 
